@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { Archivo_Black, Bungee_Shade } from 'next/font/google'
 import { BookOpenText, GraduationCap, Home, Users } from 'lucide-react'
 
-import { Button } from '../components/ui/button'
+import Link from 'next/link'
 
 const archivoBlack = Archivo_Black({
   weight: '400',
@@ -35,25 +35,25 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${bungeeShade.variable} ${archivoBlack.variable}`}
     >
-      <body>
+      <body className="backgroundImage">
         <main className="h-screen w-screen">
           <header className="w-screen h-20 p-4 flex justify-around items-center border-b-2 border-b-white">
-            <Button variant="ghost" className="flex gap-2 text-green-700">
+            <Link href="/" className="flex gap-2 text-green-700">
               <Home />
               Início
-            </Button>
-            <Button variant="ghost" className="flex gap-2 text-white">
+            </Link>
+            <Link href="/members" className="flex gap-2 text-white">
               <Users />
               Membros
-            </Button>
-            <Button variant="ghost" className="flex gap-2 text-white">
+            </Link>
+            <Link href="/" className="flex gap-2 text-white">
               <GraduationCap />
               Prove seu conhecimento!
-            </Button>
-            <Button variant="ghost" className="flex gap-2 text-white">
+            </Link>
+            <Link href="/" className="flex gap-2 text-white">
               <BookOpenText />
               Bibliografia
-            </Button>
+            </Link>
           </header>
           {children}
         </main>

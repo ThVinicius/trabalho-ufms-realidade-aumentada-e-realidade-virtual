@@ -1,6 +1,6 @@
 import { Rocket } from 'lucide-react'
 
-import { Button } from '../components/ui/button'
+import { Button } from '../components/shadcn/button'
 
 export default function Home() {
   return (
