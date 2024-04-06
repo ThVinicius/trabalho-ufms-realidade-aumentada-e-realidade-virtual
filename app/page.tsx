@@ -4,7 +4,7 @@ import { Button } from '../components/shadcn/button'
 
 export default function Home() {
   return (
-    <main className="flex w-full h-[calc(100%-5rem)] items-center justify-between p-6">
+    <main className="flex w-full items-center justify-between p-6">
       <div className="h-full w-1/2 pt-48 flex flex-col items-center bounceIn">
         <h1 className="font-ArchivoBlack text-5xl text-white text-center mb-10">
           Realidade Virtual e Realidade Aumentada

@@ -35,10 +35,8 @@ export default function RootLayout({
       className={`${bungeeShade.variable} ${archivoBlack.variable}`}
     >
       <body className="backgroundImage">
-        <main className="h-screen w-screen">
-          <NavHeader />
-          {children}
-        </main>
+        <NavHeader />
+        <main className="h-[calc(100vh-5rem)] w-screen">{children}</main>
       </body>
     </html>
   )
