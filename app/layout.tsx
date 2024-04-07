@@ -34,7 +34,7 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${bungeeShade.variable} ${archivoBlack.variable}`}
     >
-      <body className="backgroundImage">
+      <body>
         <NavHeader />
         <main className="h-[calc(100vh-5rem)] w-screen">{children}</main>
       </body>

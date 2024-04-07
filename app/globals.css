@@ -73,14 +73,12 @@
 
   body {
     @apply bg-background text-foreground;
-  }
-}
 
-.backgroundImage {
-  background-image: url('./assets/background-image.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image: url('./assets/background-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .backgroundColor {
