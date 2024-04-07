@@ -20,7 +20,7 @@ export const membersData = [
   },
   {
     id: 5,
-    name: 'N.S',
+    name: 'Nubio',
     linkedin: 'dwdw',
     github: 'wdwdw'
   },
