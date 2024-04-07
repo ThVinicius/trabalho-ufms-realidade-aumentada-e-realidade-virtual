@@ -1,6 +1,4 @@
-import { Rocket } from 'lucide-react'
-
-import { Button } from '../components/shadcn/button'
+import { ModalVideo } from '../components/modal-video'
 
 export default function Home() {
   return (
@@ -12,10 +10,7 @@ export default function Home() {
         <h2 className="font-ArchivoBlack text-2xl text-white text-center bg-blue-950 shadow-md rounded-md p-2">
           Trabalho de pesquisa realizado na aula de Fundamentos de computação
         </h2>
-        <Button className="h-16 flex gap-3 bg-green-500 hover:bg-green-400 text-xl mt-10 pulse">
-          Iniciar aprendizagem
-          <Rocket />
-        </Button>
+        <ModalVideo />
       </div>
     </main>
   )
