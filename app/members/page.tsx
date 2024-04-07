@@ -3,7 +3,7 @@ import { membersData } from './data'
 
 export default function Members() {
   return (
-    <main className="w-full h-[calc(100%-5rem)]">
+    <main className="w-full h-[calc(100%-5rem)] overflow-y-auto">
       <section className="section-main w-full h-full flex flex-col gap-10 mt-24">
         <h1 className="text-white font-ArchivoBlack text-3xl text-center">
           Membros do grupo
