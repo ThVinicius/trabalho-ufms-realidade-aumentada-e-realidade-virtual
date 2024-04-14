@@ -1,7 +1,7 @@
 export default function Bibliography() {
   return (
     <main className="w-full h-full p-10 max-md:p-2">
-      <div className="w-1/3 max-md:w-full h-full rounded shadow-2xl bg-blue-950 p-2 pb-11 overflow-y-auto">
+      <div className="w-1/3 max-md:w-full h-full rounded shadow-2xl bg-blue-950 p-2 pb-11 overflow-y-auto fadeInRight">
         <h1 className="font-ArchivoBlack text-3xl text-white text-center mb-3">
           Fontes da Pesquisa
         </h1>
