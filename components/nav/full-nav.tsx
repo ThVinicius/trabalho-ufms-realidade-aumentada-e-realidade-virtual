@@ -27,7 +27,9 @@ export function FullNav({ pathname }: IProps) {
         Membros
       </Link>
       <Link
-        href="/"
+        href="https://create.kahoot.it/share/selecoes-e-arranjos/f922772e-15cc-4fff-a8ff-f3bd15258bad"
+        target="_blank"
+        rel="noopener noreferrer"
         className={`flex gap-2 ${
           pathname === '/test' ? 'text-green-700' : 'text-white'
         }`}

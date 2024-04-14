@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import ReactPlayer from 'react-player'
 import { Rocket } from 'lucide-react'
 import {
@@ -28,7 +29,16 @@ export function ModalVideo() {
             Tema do Vídeo: Realidade Virtual e Realidade Aumentada
           </DialogTitle>
           <DialogDescription className="text-xl">
-            Depois de assistir o vídeo não se esqueça de jogar nosso quiz 🤓!
+            Depois de assistir o vídeo não se esqueça de jogar nosso{' '}
+            <Link
+              href="https://create.kahoot.it/share/selecoes-e-arranjos/f922772e-15cc-4fff-a8ff-f3bd15258bad"
+              target="_blank"
+              rel="noopener noreferrer"
+              className='underline text-blue-300'
+            >
+              quiz
+            </Link>{' '}
+            🤓!
           </DialogDescription>
         </DialogHeader>
         <div className="w-full h-full">

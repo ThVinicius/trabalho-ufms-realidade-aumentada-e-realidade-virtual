@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from 'next/image'
+import Link from 'next/link'
 
 type IProps = {
   children: string
@@ -8,7 +9,7 @@ type IProps = {
 
 export function Anchor({ icon, link, children }: IProps) {
   return (
-    <a
+    <Link
       href={link}
       target="_blank"
       rel="noopener noreferrer"
@@ -16,6 +17,6 @@ export function Anchor({ icon, link, children }: IProps) {
     >
       {children}
       <Image src={icon} alt="Linkedin icon" height={25} width={25} />
-    </a>
+    </Link>
   )
 }

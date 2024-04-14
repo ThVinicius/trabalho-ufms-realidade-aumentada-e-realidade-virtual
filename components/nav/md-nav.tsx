@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { BookOpenText, GraduationCap, Home, Menu, Users } from 'lucide-react'
 import { Sheet, SheetContent } from '../shadcn/sheet'
@@ -47,16 +48,17 @@ export function MDNav({ pathname }: IProps) {
               <Users />
               Membros
             </Button>
-            <Button
-              variant="link"
-              onClick={() => nav('/')}
+            <Link
+              href="https://create.kahoot.it/share/selecoes-e-arranjos/f922772e-15cc-4fff-a8ff-f3bd15258bad"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`flex gap-2 ${
                 pathname === '/test' ? 'text-green-700' : 'text-black'
               }`}
             >
               <GraduationCap />
               Prove seu conhecimento!
-            </Button>
+            </Link>
             <Button
               variant="link"
               onClick={() => nav('/')}
