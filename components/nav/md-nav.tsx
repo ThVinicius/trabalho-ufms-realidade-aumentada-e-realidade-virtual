@@ -61,7 +61,7 @@ export function MDNav({ pathname }: IProps) {
             </Link>
             <Button
               variant="link"
-              onClick={() => nav('/')}
+              onClick={() => nav('/bibliography')}
               className={`flex gap-2 ${
                 pathname === '/bibliography' ? 'text-green-700' : 'text-black'
               }`}

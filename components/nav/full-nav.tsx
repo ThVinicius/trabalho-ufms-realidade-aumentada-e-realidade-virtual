@@ -38,7 +38,7 @@ export function FullNav({ pathname }: IProps) {
         Prove seu conhecimento!
       </Link>
       <Link
-        href="/"
+        href="/bibliography"
         className={`flex gap-2 ${
           pathname === '/bibliography' ? 'text-green-700' : 'text-white'
         }`}
