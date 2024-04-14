@@ -11,6 +11,7 @@ import {
   DialogTrigger
 } from '../shadcn/dialog'
 import { Button } from '../shadcn/button'
+import { Skeleton } from '../shadcn/skeleton'
 
 export function ModalVideo() {
   return (
@@ -34,6 +35,9 @@ export function ModalVideo() {
           <ReactPlayer
             url="videos/video.mp4"
             controls={true}
+            fallback={
+              <Skeleton className="w-[45vw] max-md:w-[78vw] h-[33vh] max-md:h-[29vw]" />
+            }
             width="100%"
             height="100%"
           />
