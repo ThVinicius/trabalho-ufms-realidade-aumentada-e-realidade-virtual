@@ -8,7 +8,8 @@ export default function Home() {
           Realidade Virtual e Realidade Aumentada
         </h1>
         <h2 className="font-ArchivoBlack text-2xl text-white text-center bg-blue-950 shadow-md rounded-md p-2">
-          Trabalho de pesquisa realizado na aula de Fundamentos de computação
+          Trabalho de pesquisa realizado na aula de Fundamentos de Tecnologia da
+          Informação
         </h2>
         <ModalVideo />
       </div>
