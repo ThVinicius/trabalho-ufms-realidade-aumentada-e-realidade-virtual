@@ -1,18 +1,18 @@
 'use client'
 
 import Link from 'next/link'
-import ReactPlayer from 'react-player'
+import Image from 'next/image'
 import { Rocket } from 'lucide-react'
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger
 } from '../shadcn/dialog'
 import { Button } from '../shadcn/button'
-import { Skeleton } from '../shadcn/skeleton'
+import videoGif from '@/app/assets/video-channel.gif'
+import textGif from '@/app/assets/read.gif'
 
 export function ModalVideo() {
   return (
@@ -23,34 +23,37 @@ export function ModalVideo() {
           <Rocket />
         </Button>
       </DialogTrigger>
-      <DialogContent className="w-2/4 max-w-2/4 max-md:w-11/12 max-h-fit flex flex-col gap-14">
+      <DialogContent className="w-2/6 max-w-2/6 max-md:w-11/12 max-h-fit py-16 flex flex-col items-center gap-14">
         <DialogHeader>
-          <DialogTitle className="text-2xl">
-            Tema do Vídeo: Realidade Virtual e Realidade Aumentada
+          <DialogTitle className="text-2xl text-center">
+            Selecione um para começar o aprendizado
           </DialogTitle>
-          <DialogDescription className="text-xl">
-            Depois de assistir o vídeo não se esqueça de jogar nosso{' '}
-            <Link
-              href="https://create.kahoot.it/share/selecoes-e-arranjos/f922772e-15cc-4fff-a8ff-f3bd15258bad"
-              target="_blank"
-              rel="noopener noreferrer"
-              className='underline text-blue-300'
-            >
-              quiz
-            </Link>{' '}
-            🤓!
-          </DialogDescription>
         </DialogHeader>
-        <div className="w-full h-full">
-          <ReactPlayer
-            url="videos/video.mp4"
-            controls={true}
-            fallback={
-              <Skeleton className="w-[45vw] max-md:w-[78vw] h-[33vh] max-md:h-[29vw]" />
-            }
-            width="100%"
-            height="100%"
-          />
+        <div className="w-full flex max-sm:flex-col max-sm:gap-10 justify-around items-center">
+          <Link
+            href="content/video"
+            className="w-52 h-52 flex flex-col justify-center items-center rounded-2xl border border-purple-950 shadow-2xl cursor-pointer"
+          >
+            <p className="font-ArchivoBlack text-2x text-center">Vídeo</p>
+            <Image
+              src={videoGif}
+              alt="Gif de um video"
+              width={150}
+              height={150}
+            />
+          </Link>
+          <Link
+            href="content/text"
+            className="w-52 h-52 flex flex-col justify-center items-center rounded-2xl border border-purple-950 shadow-2xl cursor-pointer"
+          >
+            <p className="font-ArchivoBlack text-2x text-center">Texto</p>
+            <Image
+              src={textGif}
+              alt="Gif de um texto"
+              width={150}
+              height={150}
+            />
+          </Link>
         </div>
       </DialogContent>
     </Dialog>
