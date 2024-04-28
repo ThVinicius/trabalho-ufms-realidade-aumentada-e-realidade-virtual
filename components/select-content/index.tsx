@@ -15,6 +15,8 @@ import videoGif from '@/app/assets/video-channel.gif'
 import textGif from '@/app/assets/read.gif'
 
 export function ModalVideo() {
+
+
   return (
     <Dialog>
       <DialogTrigger asChild>
