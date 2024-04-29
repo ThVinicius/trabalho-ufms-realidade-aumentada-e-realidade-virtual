@@ -24,6 +24,7 @@ export const membersData = [
   {
     id: 5,
     name: 'Núbio Sales',
+    linkedin: 'https://www.linkedin.com/in/nubio-sales-de-oliveira-699086303/',
     avatar: '',
     avatarFallback: 'NS'
   },
