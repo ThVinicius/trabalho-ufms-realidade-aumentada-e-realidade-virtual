@@ -11,7 +11,7 @@ export default function VideoPage() {
           controls
           preload="none"
           poster="/images/poster.png"
-          className="w-3/4 h-96"
+          className="w-3/4 h-96 object-cover bg-center bg-no-repeat"
         >
           <source src="/videos/video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
