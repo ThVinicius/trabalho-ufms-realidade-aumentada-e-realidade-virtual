@@ -45,16 +45,16 @@ export function RVSlide({ isTheaterMode }: IProps) {
     >
       {/* Inicio primeiro slide */}
       <div className="w-full h-full p-10 flex">
-        <div className="h-full flex flex-col gap-10">
+        <div className="w-full h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             O que é Realidade Virtual?
           </h1>
-          <div className="w-full h-full flex gap-5">
-            <div className="h-full w-[40rem]">
+          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
               <Image
                 src={aux2}
                 alt="Imagem do primeiro oculos"
-                className="h-48 w-full"
+                className="h-48 max-md:h-fit w-full"
               />
             </div>
             <p className="text-xl text-white">
@@ -67,8 +67,8 @@ export function RVSlide({ isTheaterMode }: IProps) {
               precisa da interação para atingir realidade na nossa percepção.
             </p>
           </div>
-          <div className="w-full h-full flex gap-5">
-            <div className="h-full w-[40rem]">
+          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
               <Image
                 src={aux}
                 alt="Imagem do primeiro oculos"
@@ -94,12 +94,12 @@ export function RVSlide({ isTheaterMode }: IProps) {
 
       {/* Inicio segundo slide */}
       <div className="w-full h-full p-10 flex">
-        <div className="h-full flex flex-col gap-10">
+        <div className="w-full h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             Características
           </h1>
-          <div className="w-full h-full flex gap-5">
-            <div className="h-full w-[40rem]">
+          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
               <Image
                 src={aux3}
                 alt="Imagem do primeiro oculos"
@@ -123,8 +123,8 @@ export function RVSlide({ isTheaterMode }: IProps) {
               </p>
             </div>
           </div>
-          <div className="w-full h-full flex gap-5">
-            <div className="h-full w-[40rem]">
+          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
               <Image
                 src={aux4}
                 alt="Imagem do primeiro oculos"
@@ -148,12 +148,12 @@ export function RVSlide({ isTheaterMode }: IProps) {
 
       {/* Inicio terceiro slide */}
       <div className="w-full h-full p-10 flex">
-        <div className="h-full flex flex-col gap-10">
+        <div className="w-full h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             Classificação da Realidade Virtual (Casas et al., 1996)
           </h1>
-          <div className="w-full h-full flex gap-5">
-            <div className="h-full w-[40rem]">
+          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
               <Image
                 src={aux6}
                 alt="Imagem do primeiro oculos"
@@ -187,8 +187,8 @@ export function RVSlide({ isTheaterMode }: IProps) {
               </li>
             </ul>
           </div>
-          <div className="w-full h-full flex gap-5">
-            <div className="h-full w-[40rem]">
+          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
               <Image
                 src={aux5}
                 alt="Imagem do primeiro oculos"
@@ -211,12 +211,12 @@ export function RVSlide({ isTheaterMode }: IProps) {
 
       {/* Inicio quarto slide */}
       <div className="w-full h-full p-10 flex">
-        <div className="h-full flex flex-col gap-10">
+        <div className="w-full h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             Realidade Virtual na Educação
           </h1>
-          <div className="w-full h-full flex gap-5">
-            <div className="h-full w-[40rem]">
+          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
               <Image
                 src={aux7}
                 alt="Imagem do primeiro oculos"
@@ -244,8 +244,8 @@ export function RVSlide({ isTheaterMode }: IProps) {
               </p>
             </div>
           </div>
-          <div className="w-full h-full flex gap-5">
-            <div className="h-full w-[40rem]">
+          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
               <Image
                 src={aux8}
                 alt="Imagem do primeiro oculos"
@@ -281,12 +281,12 @@ export function RVSlide({ isTheaterMode }: IProps) {
 
       {/* Inicio quinto slide */}
       <div className="w-full h-full p-10 flex">
-        <div className="h-full flex flex-col gap-10">
+        <div className="w-full h-fit flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             Realidade Virtual na Educação
           </h1>
-          <div className="w-fit h-fit flex gap-5">
-            <div className="flex flex-col justify-center">
+          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
               <Image
                 src={aux9}
                 alt="Imagem do primeiro oculos"

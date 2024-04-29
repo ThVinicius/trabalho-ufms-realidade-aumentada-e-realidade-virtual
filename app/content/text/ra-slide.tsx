@@ -47,12 +47,12 @@ export function RASlide({ isTheaterMode }: IProps) {
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             Características da Realidade Aumentada
           </h1>
-          <div className="w-full h-full flex gap-5">
-            <div className="h-full w-fit">
+          <div className="w-full h-full flex max-md:flex-col max-md:items-center gap-5">
+            <div className="h-fit w-fit">
               <Image
                 src={aux3}
                 alt="Imagem do primeiro oculos"
-                className="h-48 w-full"
+                className="h-48 max-md:h-fit w-full"
               />
               <p className="text-white text-sm">
                 Cliente &quot;experimentando&quot; um tenis com o auxilio da
@@ -74,15 +74,15 @@ export function RASlide({ isTheaterMode }: IProps) {
       {/* Inicio segundo slide */}
       <div className="w-full h-full p-10 flex">
         <div className="h-full flex flex-col gap-10">
-          <h1 className="font-ArchivoBlack text-4xl text-white text-center">
+          <h1 className="h-full w-full font-ArchivoBlack text-4xl text-white text-center">
             História
           </h1>
-          <div className="w-full h-full flex gap-5">
-            <div className="h-full w-[40rem]">
+          <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full w-[40rem] max-md:w-fit max-md:flex max-md:flex-col max-md:items-center">
               <Image
                 src={aux}
                 alt="Imagem do primeiro oculos"
-                className="h-48 w-full"
+                className="h-48 max-md:h-24 w-full max-md:w-44"
               />
               <p className="text-white text-sm">
                 Thomas Caudell, criador do termo &apos;realidade aumentada&apos;
@@ -99,8 +99,8 @@ export function RASlide({ isTheaterMode }: IProps) {
               tivessem acesso a um monitor que os guiasse durante a instalação?
             </p>
           </div>
-          <div className="w-full h-full flex gap-5">
-            <div className="h-full w-[40rem]">
+          <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full w-[40rem] max-md:w-fit max-md:flex max-md:flex-col max-md:items-center">
               <Image
                 src={aux2}
                 alt="Imagem do primeiro oculos"
@@ -135,16 +135,16 @@ export function RASlide({ isTheaterMode }: IProps) {
 
       {/* Inicio terceiro slide */}
       <div className="w-full h-full p-10 flex">
-        <div className="h-full flex flex-col gap-10">
+        <div className="h-full w-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             Algumas empresas que aderiram a RA:
           </h1>
-          <div className="w-full h-full flex gap-5">
-            <div className="h-full w-fit">
+          <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full max-md:h-fit w-fit">
               <Image
                 src={aux4}
                 alt="Imagem do primeiro oculos"
-                className="h-48 w-full"
+                className="h-48 max-md:h-fit w-full"
               />
               <p className="text-white text-sm">Imagem: Apple.</p>
             </div>
@@ -156,12 +156,12 @@ export function RASlide({ isTheaterMode }: IProps) {
               <li>Apple – Com o Vision Pro</li>
             </ul>
           </div>
-          <div className="w-full h-full flex gap-5">
-            <div className="h-full w-[40rem]">
+          <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full max-md:h-fit w-fit">
               <Image
                 src={aux5}
                 alt="Imagem do primeiro oculos"
-                className="h-48 w-full"
+                className="h-48 max-md:h-fit w-full"
               />
               <p className="text-sm text-white">
                 O Ikea Place facilita a decisão de compra dos clientes (Foto:
@@ -189,16 +189,16 @@ export function RASlide({ isTheaterMode }: IProps) {
 
       {/* Inicio quarto slide */}
       <div className="w-full h-full p-10 flex">
-        <div className="h-full flex flex-col gap-10">
+        <div className="w-full h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             RA nas indústrias
           </h1>
-          <div className="w-full h-full flex gap-5">
-            <div className="h-full w-[40rem]">
+          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full max-md:flex max-md:flex-col max-md:items-center max-md:h-fit w-fit">
               <Image
                 src={aux6}
                 alt="Imagem do primeiro oculos"
-                className="h-48 w-full"
+                className="h-48 max-md:h-fit w-fit"
               />
               <p className="text-white text-sm">
                 Foto:
@@ -213,12 +213,12 @@ export function RASlide({ isTheaterMode }: IProps) {
               </p>
             </div>
           </div>
-          <div className="w-full h-full flex gap-5">
-            <div className="h-full w-[40rem]">
+          <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full max-md:h-fit w-fit">
               <Image
                 src={aux7}
                 alt="Imagem do primeiro oculos"
-                className="h-48 w-full"
+                className="h-48 max-md:h-fit w-fit"
               />
               <p className="text-sm text-white">
                 Foto:
@@ -246,7 +246,7 @@ export function RASlide({ isTheaterMode }: IProps) {
 
       {/* Fim slide */}
       <div className="w-full h-full p-10 flex">
-        <div className="h-full flex flex-col gap-10">
+        <div className="w-full h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             Referências Bibliográficas
           </h1>
@@ -257,7 +257,7 @@ export function RASlide({ isTheaterMode }: IProps) {
                   href="	https://www.iberdrola.com/inovacao/o-que-e-realidade-aumentada#:~:text=A%20Realidade%20Aumentada%20(RA)%20%C3%A9,bilh%C3%B5es%20de%20d%C3%B3lares%20no%20mundo"
                   target="_blank"
                 >
-                  https://www.iberdrola.com/inovacao/o-que-e-realidade-aumentada#:~:text=A%20Realidade%20Aumentada%20(RA)%20%C3%A9,bilh%C3%B5es%20de%20d%C3%B3lares%20no%20mundo
+                  https://www.iberdrola.com/inovacao/o-que-e-realidade-aumentada
                 </Link>
               </li>
               <li>
@@ -273,7 +273,7 @@ export function RASlide({ isTheaterMode }: IProps) {
                   href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNQirHDzlyIyKC_tyaVY6LrQRBDm_tV_mc0GUq1VgguI3PKGPhFogsakJN&s=10"
                   target="_blank"
                 >
-                  https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNQirHDzlyIyKC_tyaVY6LrQRBDm_tV_mc0GUq1VgguI3PKGPhFogsakJN&s=10
+                  https://encrypted-tbn0.gstatic.com/
                 </Link>
               </li>
               <li>
@@ -281,7 +281,7 @@ export function RASlide({ isTheaterMode }: IProps) {
                   href="https://sebrae.com.br/sites/PortalSebrae/artigos/realidadeaumentada-torna-mais-eficiente-a-industria-40,4d7bcf1a03fe5810VgnVCM1000001b00320aRCRD"
                   target="_blank"
                 >
-                  https://sebrae.com.br/sites/PortalSebrae/artigos/realidadeaumentada-torna-mais-eficiente-a-industria-40,4d7bcf1a03fe5810VgnVCM1000001b00320aRCRD
+                  https://sebrae.com.br/sites/PortalSebrae/artigos/realidadeaumentada-torna-mais-eficiente-a-industria-40
                 </Link>
               </li>
             </ul>
