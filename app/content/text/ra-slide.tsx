@@ -43,8 +43,8 @@ export function RASlide({ isTheaterMode }: IProps) {
       containerClass='carousel-conteiner'
     >
       {/* Inicio primeiro slide */}
-      <div className="w-full h-full p-10 flex slideBackground">
-        <div className="h-full flex flex-col gap-10">
+      <div className="w-full h-full p-10 flex">
+        <div className="w-full h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             Características da Realidade Aumentada
           </h1>
