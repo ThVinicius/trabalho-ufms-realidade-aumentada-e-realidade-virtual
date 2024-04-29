@@ -109,6 +109,11 @@
   height: 100vh;
 }
 
+.carousel-conteiner {
+  width: 100%;
+  height: 100%;
+}
+
 .bounceIn {
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn;

@@ -40,6 +40,7 @@ export function RASlide({ isTheaterMode }: IProps) {
       draggable={true}
       keyBoardControl
       itemClass={`${isTheaterMode ? 'carousel-full-mode' : ''} slideBackground`}
+      containerClass='carousel-conteiner'
     >
       {/* Inicio primeiro slide */}
       <div className="w-full h-full p-10 flex slideBackground">

@@ -34,7 +34,7 @@ export default function TextPage() {
   }
 
   return (
-    <main className="w-full h-full">
+    <main className="w-full h-[85%]">
       <div className="p-4 flex justify-around">
         <Link
           href="/content/video"

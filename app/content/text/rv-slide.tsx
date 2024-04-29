@@ -42,6 +42,7 @@ export function RVSlide({ isTheaterMode }: IProps) {
       draggable={true}
       keyBoardControl
       itemClass={`${isTheaterMode ? 'carousel-full-mode' : ''} slideBackground`}
+      containerClass='carousel-conteiner'
     >
       {/* Inicio primeiro slide */}
       <div className="w-full h-full p-10 flex">
@@ -281,7 +282,7 @@ export function RVSlide({ isTheaterMode }: IProps) {
 
       {/* Inicio quinto slide */}
       <div className="w-full h-full p-10 flex">
-        <div className="w-full h-fit flex flex-col gap-10">
+        <div className="w-full h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             Realidade Virtual na Educação
           </h1>
