@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import Carousel, { ResponsiveType } from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 
@@ -13,7 +14,6 @@ import aux6 from '../../assets/2.-realidade-virtual.webp'
 import aux7 from '../../assets/vr-educação.jpeg'
 import aux8 from '../../assets/img_8649.webp'
 import aux9 from '../../assets/alunos-da-bond-university-australia.-cred-divulgacao-1024x1024.jpg'
-import Link from 'next/link'
 
 const responsive: ResponsiveType = {
   desktop: {
@@ -30,16 +30,21 @@ const responsive: ResponsiveType = {
   }
 }
 
-export function RVSlide() {
+type IProps = {
+  isTheaterMode: boolean
+}
+
+export function RVSlide({ isTheaterMode }: IProps) {
   return (
     <Carousel
       responsive={responsive}
       swipeable={true}
       draggable={true}
       keyBoardControl
+      itemClass={`${isTheaterMode ? 'carousel-full-mode' : ''} slideBackground`}
     >
       {/* Inicio primeiro slide */}
-      <div className="w-full h-full p-10 flex bg-orange-500">
+      <div className="w-full h-full p-10 flex">
         <div className="h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             O que é Realidade Virtual?
@@ -88,7 +93,7 @@ export function RVSlide() {
       {/* FIM primeiro slide */}
 
       {/* Inicio segundo slide */}
-      <div className="w-full h-full p-10 flex bg-orange-500">
+      <div className="w-full h-full p-10 flex">
         <div className="h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             Características
@@ -142,7 +147,7 @@ export function RVSlide() {
       {/* Fim segundo slide */}
 
       {/* Inicio terceiro slide */}
-      <div className="w-full h-full p-10 flex bg-orange-500">
+      <div className="w-full h-full p-10 flex">
         <div className="h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             Classificação da Realidade Virtual (Casas et al., 1996)
@@ -159,7 +164,7 @@ export function RVSlide() {
                 Realidade Virtual — Foto: Viviane Weneck/TechTudo
               </p>
             </div>
-            <ul className="text-xl text-white list-disc ml-10">
+            <ul className="text-xl text-white list-disc ml-10 flex flex-col gap-5 text-start">
               <li>
                 Sistemas de imersão: aqueles que submergem ou introduzem o
                 explorador de maneira estreita com o mundo virtual, mediante a
@@ -205,7 +210,7 @@ export function RVSlide() {
       {/* Fim terceiro slide */}
 
       {/* Inicio quarto slide */}
-      <div className="w-full h-full p-10 flex bg-orange-500">
+      <div className="w-full h-full p-10 flex">
         <div className="h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             Realidade Virtual na Educação
@@ -275,7 +280,7 @@ export function RVSlide() {
       {/* Fim quarto slide */}
 
       {/* Inicio quinto slide */}
-      <div className="w-full h-full p-10 flex bg-orange-500">
+      <div className="w-full h-full p-10 flex">
         <div className="h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             Realidade Virtual na Educação
@@ -297,7 +302,7 @@ export function RVSlide() {
                 <h2 className="text-center text-3xl font-bold mb-6">
                   Motivos para usar RV na educação
                 </h2>
-                <ul className="text-xl text-white list-disc ml-10">
+                <ul className="text-xl text-white list-disc ml-10 flex flex-col gap-5 text-start">
                   <li>Maior motivação dos estudantes (usuários);</li>
                   <li>
                     Poder de ilustração da realidade virtual para alguns
@@ -330,13 +335,13 @@ export function RVSlide() {
       {/* Fim quinto slide */}
 
       {/* Fim slide */}
-      <div className="w-full h-full p-10 flex bg-orange-500">
+      <div className="w-full h-full p-10 flex">
         <div className="h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
             Referências Bibliográficas
           </h1>
           <div className="flex flex-col gap-3 text-2xl text-white">
-            <ul className="text-xl text-white list-disc ml-10 flex flex-col gap-7">
+            <ul className="text-xl text-white list-disc ml-10 flex flex-col gap-5 text-start">
               <li>
                 Braga Mariluci . Realidade Virtual e Educação. Revista de
                 Biologia e Ciências da Terra [em linea]. 2001, 1(1). ISSN:

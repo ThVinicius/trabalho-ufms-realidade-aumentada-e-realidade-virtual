@@ -1,20 +1,6 @@
-'use client'
-
-import { useState } from 'react';
 import { ModalVideo } from '../components/select-content'
 
 export default function Home() {
-  const [isTheaterMode, setIsTheaterMode] = useState(false);
-
-  const toggleTheaterMode = () => {
-    setIsTheaterMode(!isTheaterMode);
-    if (!isTheaterMode) {
-      document.documentElement.requestFullscreen(); // Solicita o modo de tela cheia
-    } else {
-      document.exitFullscreen(); // Sai do modo de tela cheia
-    }
-  };
-
   return (
     <main className="flex w-full items-center justify-between max-md:justify-center p-6">
       <div className="h-full w-1/2 max-md:w-full pt-48 max-md:pt-9 flex flex-col items-center bounceIn">

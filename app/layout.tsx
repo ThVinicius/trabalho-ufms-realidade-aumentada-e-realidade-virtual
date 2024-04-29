@@ -1,6 +1,4 @@
 import './globals.css'
-import 'react-awesome-slider/dist/styles.css'
-import 'react-awesome-slider/dist/custom-animations/open-animation.css'
 
 import type { Metadata } from 'next'
 import { Archivo_Black, Bungee_Shade } from 'next/font/google'
