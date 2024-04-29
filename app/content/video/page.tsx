@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function VideoPage() {
   return (
-    <main className="w-full h-full">
+    <main className="w-full h-fit">
       <div className="w-1/2 max-lg:w-full h-full p-3 flex flex-col gap-10 items-center justify-center">
         <h1 className="font-ArchivoBlack text-5xl text-white text-center">
           Vídeo da Pesquisa
