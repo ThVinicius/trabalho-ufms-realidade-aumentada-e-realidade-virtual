@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Bibliography() {
   return (
     <main className="w-full h-full p-10 max-md:p-2">
@@ -6,66 +8,27 @@ export default function Bibliography() {
           Fontes da Pesquisa
         </h1>
 
-        <div className="w-full h-full flex flex-col gap-7 text-center text-white text-lg">
-          <p>
-            Milgram, P., & Kishino, F. (1994). A taxonomy of mixed reality
-            visual displays. IEICE TRANSACTIONS on Information and Systems,
-            77(12), 1321-1329.
-          </p>
+        <div className="w-full h-full flex flex-col gap-7 text-center text-white text-md text-wrap">
+          <Link href="https://www.iberdrola.com/inovacao/o-que-e-realidade-aumentada#:~:text=A%20Realidade%20Aumentada%20(RA)%20%C3%A9,bilh%C3%B5es%20de%20d%C3%B3lares%20no%20mundo">
+            https://www.iberdrola.com/inovacao/o-que-e-realidade-aumentada
+          </Link>
 
-          <p>
-            Sherman, W. R., & Craig, A. B. (2003). Understanding Virtual
-            Reality: Interface, Application, and Design. Morgan Kaufmann.
-          </p>
+          <Link href="https://r2u.io/confira-algumas-empresas-de-realidade-virtual-e-realidade-aumentada-no-brasil/">
+            https://https://r2u.io/confira-algumas-empresas-de-realidade-virtual-e-realidade-aumentada-no-brasil/
+          </Link>
 
-          <p>
-            Azuma, R. T. (1997). A Survey of Augmented Reality. Presence:
-            Teleoperators and Virtual Environments, 6(4), 355–385.
-            https://doi.org/10.1162/pres.1997.6.4.355
-          </p>
+          <Link href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNQirHDzlyIyKC_tyaVY6LrQRBDm_tV_mc0GUq1VgguI3PKGPhFogsakJN&s=10">
+            https://https://encrypted-tbn0.gstatic.com/
+          </Link>
 
-          <p>
-            Milgram, P., & Kishino, F. (1994). A taxonomy of mixed reality
-            visual displays. IEICE TRANSACTIONS on Information and Systems,
-            77(12), 1321-1329.
-          </p>
+          <Link href="https://sebrae.com.br/sites/PortalSebrae/artigos/realidadeaumentada-torna-mais-eficiente-a-industria-40,4d7bcf1a03fe5810VgnVCM1000001b00320aRCRD">
+            https://sebrae.com.br/sites/PortalSebrae/artigos/realidadeaumentada-torna-mais-eficiente-a-industria-40
+          </Link>
 
-          <p>
-            Craig, A. B. (2013). Understanding Augmented Reality: Concepts and
-            Applications. Morgan Kaufmann.
-          </p>
-
-          <p>
-            Sutherland, I. E. (1968). A head-mounted three dimensional display.
-            Proceedings of the December 9-11, 1968, Fall Joint Computer
-            Conference, Part I (AFIPS &apos;68 (Fall, part I)), 757–764.
-          </p>
-
-          <p>
-            Steuer, J. (1992). Defining Virtual Reality: Dimensions Determining
-            Telepresence. Journal of Communication, 42(4), 73–93.
-            https://doi.org/10.1111/j.1460-2466.1992.tb00812.x
-          </p>
-
-          <p>
-            Azuma, R. T., Baillot, Y., Behringer, R., Feiner, S., Julier, S., &
-            MacIntyre, B. (2001). Recent advances in augmented reality. IEEE
-            Computer Graphics and Applications, 21(6), 34–47.
-            https://doi.org/10.1109/38.963459
-          </p>
-
-          <p>
-            Cruz-Neira, C., Sandin, D. J., & DeFanti, T. A. (1993).
-            Surround-screen projection-based virtual reality: the design and
-            implementation of the CAVE. ACM SIGGRAPH Computer Graphics, 27(2),
-            135–142. https://doi.org/10.1145/166117.166134
-          </p>
-
-          <p>
-            Billinghurst, M., & Kato, H. (1999). Collaborative augmented
-            reality. Communications of the ACM, 45(7), 64–70.
-            https://doi.org/10.1145/306549.306589
-          </p>
+          <Link href="https://www.redalyc.org/articulo.oa?id=50010104">
+            Braga Mariluci . Realidade Virtual e Educação. Revista de Biologia e
+            Ciências da Terra [em linea]. 2001, 1(1). ISSN: 1519-5228.
+          </Link>
         </div>
       </div>
     </main>
