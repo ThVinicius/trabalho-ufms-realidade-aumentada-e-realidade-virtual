@@ -2,7 +2,7 @@ import { ModalVideo } from '../components/select-content'
 
 export default function Home() {
   return (
-    <main className="flex w-full h-full items-center justify-between max-md:justify-center p-6">
+    <main className="flex w-full h-full items-center justify-between max-md:justify-center">
       <div className="h-full w-1/2 max-md:w-full pt-48 max-md:pt-9 flex flex-col items-center bounceIn">
         <h1 className="font-ArchivoBlack text-5xl text-white text-center mb-10">
           Realidade Virtual e Realidade Aumentada

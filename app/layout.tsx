@@ -36,7 +36,7 @@ export default function RootLayout({
     >
       <body>
         <NavHeader />
-        <main className="h-[calc(100vh-5rem)] w-screen">{children}</main>
+        <main className="h-[calc(100vh-5rem)] w-screen overflow-y-auto p-6">{children}</main>
       </body>
     </html>
   )
