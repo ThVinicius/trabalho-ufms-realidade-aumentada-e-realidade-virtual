@@ -10,11 +10,11 @@ import { Button } from '../../../components/shadcn/button'
 import aux3 from '../../assets/realidade-aumentada.webp'
 import googleRA from '../../assets/google-ra.png'
 import appleRA from '../../assets/apple-ra.png'
-import microsftRA from "../../assets/microsoft-ra.png"
-import ikeaRA from "../../assets/ikea-ra.png"
-import pokemon from "../../assets/size_960_16_9_pokemon-go.webp"
-import medidasRA from "../../assets/medidas-ra.png"
-import inkHunterRA from "../../assets/ink-hunter-ra.png"
+import microsftRA from '../../assets/microsoft-ra.png'
+import ikeaRA from '../../assets/ikea-ra.png'
+import pokemon from '../../assets/size_960_16_9_pokemon-go.webp'
+import medidasRA from '../../assets/medidas-ra.png'
+import inkHunterRA from '../../assets/ink-hunter-ra.png'
 
 const responsive: ResponsiveType = {
   desktop: {
@@ -98,18 +98,14 @@ export function RASlide({ isTheaterMode }: IProps) {
                 className="h-48 max-md:h-24 w-full max-md:w-44"
               />
               <p className="text-white text-sm">
-                Fonte:{' '}
-                <Link
-                  href="https://g1.globo.com/tecnologia/noticia/2015/03/google-nao-desistiu-de-oculos-inteligentes-diz-executivo.html"
-                  target="_blank"
-                >
-                  https://g1.globo.com/tecnologia/noticia/2015/03/google-nao-desistiu-de-oculos-inteligentes-diz-executivo.html
-                </Link>
+                O Google Glass é um dispositivo semelhante a um par de óculos,
+                que fixados em um dos olhos, disponibiliza uma pequena tela
+                acima do campo de visão.
               </p>
             </div>
 
-            <div className='text-white flex flex-col gap-7'>
-              <h2 className='text-3xl'>Google</h2>
+            <div className="text-white flex flex-col gap-7">
+              <h2 className="text-3xl">Google</h2>
               <p className="text-2xl">
                 O Google foi o pioneiro no uso de RA com o Google Glass, que foi
                 uma tentativa inicial de óculos inteligentes. Além disso, o
@@ -123,32 +119,25 @@ export function RASlide({ isTheaterMode }: IProps) {
             <div className="h-full w-[40rem] max-md:w-fit max-md:flex max-md:flex-col max-md:items-center">
               <Image
                 src={appleRA}
-                alt="Imagem do primeiro oculos"
+                alt="O Apple Vision Pro"
                 className="h-48 w-full"
               />
               <p className="text-sm text-white">
-                Fonte:{' '}
-                <Link
-                  href="https://www.apple.com/apple-vision-pro/"
-                  target="_blank"
-                >
-                  https://www.apple.com/apple-vision-pro/
-                </Link>
+                O Apple Vision Pro, headset de realidade mista (MR) da Apple.
               </p>
             </div>
 
-            <div className='text-white flex flex-col gap-7'>
-              <h2 className='text-3xl'>Apple</h2>
-              <p className='text-2xl'>
-              A Apple incorporou recursos de RA em seus dispositivos IOS, como o
-              iPhone e o iPad, por meio da plataforma ARRKit. Muitas aplicações
-              utilizam esses recursos para jogos, design de interiores, educação
-              e outras experiências interativas. A Apple também lançou o Vision
-              Pro, um headset de realidade mista com capacidade para
-              experiências de RA e RV.
-            </p>
+            <div className="text-white flex flex-col gap-7">
+              <h2 className="text-3xl">Apple</h2>
+              <p className="text-2xl">
+                A Apple incorporou recursos de RA em seus dispositivos IOS, como
+                o iPhone e o iPad, por meio da plataforma ARRKit. Muitas
+                aplicações utilizam esses recursos para jogos, design de
+                interiores, educação e outras experiências interativas. A Apple
+                também lançou o Vision Pro, um headset de realidade mista com
+                capacidade para experiências de RA e RV.
+              </p>
             </div>
-            
           </div>
         </div>
       </div>
@@ -168,20 +157,19 @@ export function RASlide({ isTheaterMode }: IProps) {
                 className="h-48 max-md:h-24 w-full max-md:w-44"
               />
               <p className="text-white text-sm">
-                Fonte:{' '}
-                <Link
-                  href="https://www.safeimports.com.br/microsoft-hololens2"
-                  target="_blank"
-                >
-                  https://www.safeimports.com.br/microsoft-hololens2
-                </Link>
+                Um dispositivo holográfico autónomo, ergonómico e sem fios com
+                aplicações preparadas para empresas e para aumentar a precisão e
+                o rendimento do utilizador.
               </p>
             </div>
 
-            <div className='text-white flex flex-col gap-7'>
-              <h2 className='text-3xl'>Microsoft</h2>
+            <div className="text-white flex flex-col gap-7">
+              <h2 className="text-3xl">Microsoft</h2>
               <p className="text-2xl">
-              A Microsoft desenvolveu o HoloLens, um dispositivo de realidade mista que permite sobrepor elementos digitais ao mundo real. Ele é amplamente utilizado para fins industriais, médicos e educacionais.
+                A Microsoft desenvolveu o HoloLens, um dispositivo de realidade
+                mista que permite sobrepor elementos digitais ao mundo real. Ele
+                é amplamente utilizado para fins industriais, médicos e
+                educacionais.
               </p>
             </div>
           </div>
@@ -193,17 +181,20 @@ export function RASlide({ isTheaterMode }: IProps) {
                 className="h-48 w-full"
               />
               <p className="text-sm text-white">
-              Jogo usa realidade aumentada para levar personagens da Nintendo ao mundo real, mas de forma virtual (Reprodução/Niantic)
+                Jogo usa realidade aumentada para levar personagens da Nintendo
+                ao mundo real, mas de forma virtual (Reprodução/Niantic)
               </p>
             </div>
 
-            <div className='text-white flex flex-col gap-7'>
-              <h2 className='text-3xl'>Niantic</h2>
-              <p className='text-2xl'>
-              Conhecida pelo jogo de sucesso Pokémon Go, que usa a RA para colocar Pokémon no mundo real. Eles também desenvolveram outros jogos que exploram a realidade aumentada como Harry Potter: Wizard Unite.
-            </p>
+            <div className="text-white flex flex-col gap-7">
+              <h2 className="text-3xl">Niantic</h2>
+              <p className="text-2xl">
+                Conhecida pelo jogo de sucesso Pokémon Go, que usa a RA para
+                colocar Pokémon no mundo real. Eles também desenvolveram outros
+                jogos que exploram a realidade aumentada como Harry Potter:
+                Wizard Unite.
+              </p>
             </div>
-            
           </div>
         </div>
       </div>
@@ -213,31 +204,27 @@ export function RASlide({ isTheaterMode }: IProps) {
       <div className="w-full h-full p-10 flex">
         <div className="w-full h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
-          Principais empresas que utilizam a Realidade Aumentada
+            Principais empresas que utilizam a Realidade Aumentada
           </h1>
           <div className="w-full h-full flex flex-col items-center max-md:flex-col max-md:items-center gap-28">
-            <div className="text-white flex flex-col gap-7" >
+            <div className="text-white flex flex-col gap-7">
               <h2 className="text-3xl">IKEA</h2>
-            <p className="text-2xl text-white">
-            A IKEA usa a RA para permitir que os clientes visualizem móveis em seus espaços, por meio do aplicativo IKEA Place. Os usuários podem sobrepor modelos tridimensionais de móveis em ambientes reais para ajudar a tomar decisões de compra.
-            </p>
+              <p className="text-2xl text-white">
+                A IKEA usa a RA para permitir que os clientes visualizem móveis
+                em seus espaços, por meio do aplicativo IKEA Place. Os usuários
+                podem sobrepor modelos tridimensionais de móveis em ambientes
+                reais para ajudar a tomar decisões de compra.
+              </p>
             </div>
-            
-
             <div className="h-fit w-fit">
               <Image
                 src={ikeaRA}
                 alt="Imagem do primeiro oculos"
                 className="h-48 max-md:h-fit w-full"
               />
-             <p className="text-white text-sm">
-                Fonte:{' '}
-                <Link
-                  href="https://www.ikea.com/global/en/newsroom/innovation/ikea-to-launch-new-ar-capabilities-for-ikea-place-on-new-ipad-pro-200319/"
-                  target="_blank"
-                >
-                  https://www.ikea.com/global
-                </Link>
+              <p className="text-white text-sm">
+                O Ikea Place facilita a decisão de compra dos clientes (Foto:
+                Divulgação)
               </p>
             </div>
           </div>
@@ -249,7 +236,7 @@ export function RASlide({ isTheaterMode }: IProps) {
       <div className="w-full h-full p-10 flex">
         <div className="h-full flex flex-col gap-10">
           <h1 className="w-full font-ArchivoBlack text-4xl text-white text-center">
-          Aplicativos de Realidade Aumentada
+            Aplicativos de Realidade Aumentada
           </h1>
           <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
             <div className="h-full w-[40rem] max-md:w-fit max-md:flex max-md:flex-col max-md:items-center">
@@ -259,20 +246,17 @@ export function RASlide({ isTheaterMode }: IProps) {
                 className="h-48 max-md:h-24 w-full max-md:w-44"
               />
               <p className="text-white text-sm">
-                Fonte:{' '}
-                <Link
-                  href="https://www.cnnbrasil.com.br/tecnologia/realidade-aumentada/"
-                  target="_blank"
-                >
-                  https://www.cnnbrasil.com.br/tecnologia/realidade-aumentada/
-                </Link>
+                O app Medida permite medir rapidamente o tamanho de objetos
+                reais, a altura de uma pessoa, e ele pode fornecer
+                automaticamente as dimensões de objetos retangulares.
               </p>
             </div>
 
-            <div className='text-white flex flex-col gap-7'>
-              <h2 className='text-3xl'>Medidas (IOS)</h2>
+            <div className="text-white flex flex-col gap-7">
+              <h2 className="text-3xl">Medidas (IOS)</h2>
               <p className="text-2xl">
-              Ele funciona como uma espécie de fita métrica, permitindo medir o tamanho dos objetos ao seu redor por meio da câmera.
+                Ele funciona como uma espécie de fita métrica, permitindo medir
+                o tamanho dos objetos ao seu redor por meio da câmera.
               </p>
             </div>
           </div>
@@ -284,23 +268,20 @@ export function RASlide({ isTheaterMode }: IProps) {
                 className="h-48 w-full"
               />
               <p className="text-white text-sm">
-                Fonte:{' '}
-                <Link
-                  href="https://www.cnnbrasil.com.br/tecnologia/realidade-aumentada/"
-                  target="_blank"
-                >
-                  https://www.cnnbrasil.com.br/tecnologia/realidade-aumentada/
-                </Link>
+                A ferramenta permite escolher e aplicar desenhos em fotos da
+                pele de qualquer parte do corpo.
               </p>
             </div>
 
-            <div className='text-white flex flex-col gap-7'>
-              <h2 className='text-3xl'>Ink Hunter</h2>
-              <p className='text-2xl'>
-              É a solução de RA para quem quer se tatuar. O app permite testar como uma tatuagem vai ficar. Para usar é bem simples: você só precisa marcar o espaço no seu corpo com uma caneta e apontá-lo para a câmera. 
-            </p>
+            <div className="text-white flex flex-col gap-7">
+              <h2 className="text-3xl">Ink Hunter</h2>
+              <p className="text-2xl">
+                É a solução de RA para quem quer se tatuar. O app permite testar
+                como uma tatuagem vai ficar. Para usar é bem simples: você só
+                precisa marcar o espaço no seu corpo com uma caneta e apontá-lo
+                para a câmera.
+              </p>
             </div>
-            
           </div>
         </div>
       </div>
