@@ -34,7 +34,7 @@ export default function VideoPage() {
         <p className="text-xl text-white text-center bg-blue-950 p-3 rounded-lg">
           Quer testar seu conhecimento no assunto? jogue nosso{' '}
           <Link
-            href="https://create.kahoot.it/share/selecoes-e-arranjos/f922772e-15cc-4fff-a8ff-f3bd15258bad"
+            href="https://create.kahoot.it/details/b725b87f-2497-4b1b-a509-f914be636e2e"
             target="_blank"
             rel="noopener noreferrer"
             className="underline text-blue-300"

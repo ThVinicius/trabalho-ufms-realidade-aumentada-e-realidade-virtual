@@ -49,7 +49,7 @@ export function MDNav({ pathname }: IProps) {
               Membros
             </Button>
             <Link
-              href="https://create.kahoot.it/share/selecoes-e-arranjos/f922772e-15cc-4fff-a8ff-f3bd15258bad"
+              href="https://create.kahoot.it/details/b725b87f-2497-4b1b-a509-f914be636e2e"
               target="_blank"
               rel="noopener noreferrer"
               className={`flex gap-2 ${
