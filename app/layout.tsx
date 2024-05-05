@@ -1,6 +1,7 @@
 import './globals.css'
 
 import type { Metadata } from 'next'
+import Head from 'next/head'
 import { Archivo_Black, Bungee_Shade } from 'next/font/google'
 
 import { NavHeader } from '../components/nav'
@@ -34,9 +35,14 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${bungeeShade.variable} ${archivoBlack.variable}`}
     >
+      <Head>
+        <meta property="og:image" content="app/assets/background-image.png" />
+      </Head>
       <body>
         <NavHeader />
-        <main className="h-[calc(100vh-5rem)] w-screen overflow-y-auto p-6">{children}</main>
+        <main className="h-[calc(100vh-5rem)] w-screen overflow-y-auto p-6">
+          {children}
+        </main>
       </body>
     </html>
   )
