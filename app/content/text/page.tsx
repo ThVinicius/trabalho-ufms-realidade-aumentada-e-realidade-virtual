@@ -44,7 +44,7 @@ export default function TextPage() {
         </Link>
         <Button onClick={activeTheaterMode}>Tela cheia</Button>
       </div>
-
+      <h2 className='text-center text-white text-3xl my-4'>Escolha abaixo qual tema deseja ler</h2>
       <Tabs
         defaultValue="rv"
         className={`w-full h-full text-center ${
