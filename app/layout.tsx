@@ -36,7 +36,7 @@ export default function RootLayout({
       className={`${bungeeShade.variable} ${archivoBlack.variable}`}
     >
       <Head>
-        <meta property="og:image" content="app/assets/background-image.png" />
+        <meta property="og:image" content="public/images/background-image.png" />
       </Head>
       <body>
         <NavHeader />
