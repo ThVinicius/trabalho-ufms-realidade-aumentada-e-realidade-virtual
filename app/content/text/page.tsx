@@ -11,6 +11,7 @@ import {
 } from '../../../components/shadcn/tabs'
 import { RASlide } from './ra-slide'
 import { RVSlide } from './rv-slide'
+import { Expand, Youtube } from 'lucide-react'
 
 export default function TextPage() {
   const [isTheaterMode, setIsTheaterMode] = useState(false)
@@ -38,13 +39,19 @@ export default function TextPage() {
       <div className="p-4 flex justify-around">
         <Link
           href="/content/video"
-          className="bg-white text-center p-2 rounded-lg"
+          className="bg-white text-center p-2 rounded-lg flex items-center gap-2 text-lg"
         >
+          <Youtube size={30} />
           Ir ao vídeo
         </Link>
-        <Button onClick={activeTheaterMode}>Tela cheia</Button>
+        <Button onClick={activeTheaterMode} className='flex items-center gap-2 text-lg'>
+          <Expand />
+          Tela cheia
+        </Button>
       </div>
-      <h2 className='text-center text-white text-3xl my-4'>Escolha abaixo qual tema deseja ler</h2>
+      <h2 className="text-center text-white text-3xl my-4">
+        Escolha abaixo qual tema deseja ler
+      </h2>
       <Tabs
         defaultValue="rv"
         className={`w-full h-full text-center ${
