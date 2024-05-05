@@ -1,7 +1,6 @@
 import linkedinIcon from '../../app/assets/linkedin.png'
 import { Anchor } from './anchor'
 import { Avatar, AvatarFallback, AvatarImage } from '../shadcn/avatar'
-import { StaticImageData } from 'next/image'
 
 type IProps = {
   id: string
@@ -9,6 +8,7 @@ type IProps = {
   linkedin?: string
   avatar?: string
   avatarFallback: string
+  fallbackColor: string
 }
 
 export function MemberCard({
@@ -16,15 +16,18 @@ export function MemberCard({
   linkedin,
   avatar,
   avatarFallback,
+  fallbackColor,
   id
 }: IProps) {
   return (
     <div
       className={`w-80 h-48 relative rounded-3xl shadow-lg m-4 bg-white fadeInRight fadeInDelay${id}`}
     >
-      <Avatar className='w-20 h-20 absolute -top-9 left-[7.5rem]'>
+      <Avatar className="w-20 h-20 absolute -top-9 left-[7.5rem]">
         <AvatarImage src={avatar} />
-        <AvatarFallback className='text-2xl bg-[#6246ea]'>{avatarFallback}</AvatarFallback>
+        <AvatarFallback className={`text-3xl ${fallbackColor}`}>
+          {avatarFallback}
+        </AvatarFallback>
       </Avatar>
       <div className="px-6 py-4 mt-10">
         <div className="font-bold text-xl text-center mb-2">{name}</div>
