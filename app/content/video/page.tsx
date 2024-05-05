@@ -8,7 +8,7 @@ const ReactPlayer = dynamic(() => import('react-player'), { ssr: false })
 
 export default function VideoPage() {
   return (
-    <main className="w-full h-fit">
+    <main className="w-full h-4/5">
       <div className="w-56 flex justify-end">
         <Link
           href="/content/text"
@@ -18,11 +18,19 @@ export default function VideoPage() {
         </Link>
       </div>
 
-      <div className="w-1/2 max-lg:w-full h-full p-3 flex flex-col gap-10 items-center justify-center">
+      <div className="w-2/5 max-lg:w-full h-full p-3 flex flex-col gap-10 items-center justify-center">
         <h1 className="font-ArchivoBlack text-5xl text-white text-center">
           Vídeo da Pesquisa
         </h1>
-        <ReactPlayer url="https://youtu.be/nQR2c33208Q" controls />
+        <div className="w-full h-full">
+          <ReactPlayer
+            url="https://youtu.be/nQR2c33208Q"
+            controls
+            width="100%"
+            height="100%"
+          />
+        </div>
+
         <p className="text-xl text-white text-center bg-blue-950 p-3 rounded-lg">
           Quer testar seu conhecimento no assunto? jogue nosso{' '}
           <Link
