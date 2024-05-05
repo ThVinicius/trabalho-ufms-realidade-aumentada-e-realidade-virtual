@@ -5,15 +5,16 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import Carousel, { ResponsiveType } from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
-
-import aux from '../../assets/photo.webp'
-import aux2 from '../../assets/pokemon-go-g1.webp'
-import aux3 from '../../assets/realidade-aumentada.webp'
-import aux4 from '../../assets/Apple-Vision-Pro-sistema-1.jpg'
-import aux5 from '../../assets/ikea-place.webp'
-import aux6 from '../../assets/ra.jpeg'
-import aux7 from '../../assets/Realidade-Aumentada-na-Logistica-Interna-a-experiencia-do-cliente-em-primeiro-lugar.jpg'
 import { Button } from '../../../components/shadcn/button'
+
+import aux3 from '../../assets/realidade-aumentada.webp'
+import googleRA from '../../assets/google-ra.png'
+import appleRA from '../../assets/apple-ra.png'
+import microsftRA from "../../assets/microsoft-ra.png"
+import ikeaRA from "../../assets/ikea-ra.png"
+import pokemon from "../../assets/size_960_16_9_pokemon-go.webp"
+import medidasRA from "../../assets/medidas-ra.png"
+import inkHunterRA from "../../assets/ink-hunter-ra.png"
 
 const responsive: ResponsiveType = {
   desktop: {
@@ -45,12 +46,12 @@ export function RASlide({ isTheaterMode }: IProps) {
       containerClass="carousel-conteiner"
       customRightArrow={
         <Button className="absolute right-10 text-white p-5 py-7 rounded-full bg-white opacity-50 hover:bg-white hover:opacity-100">
-          <ArrowRight size={36} color='#000' />
+          <ArrowRight size={36} color="#000" />
         </Button>
       }
       customLeftArrow={
         <Button className="absolute left-10 text-white p-5 py-7 rounded-full bg-white opacity-50 hover:bg-white hover:opacity-100">
-          <ArrowLeft size={36} color='#000' />
+          <ArrowLeft size={36} color="#000" />
         </Button>
       }
     >
@@ -58,9 +59,15 @@ export function RASlide({ isTheaterMode }: IProps) {
       <div className="w-full h-full p-10 flex">
         <div className="w-full h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
-            Características da Realidade Aumentada
+            O QUE É REALIDADE AUMENTADA
           </h1>
-          <div className="w-full h-full flex max-md:flex-col max-md:items-center gap-5">
+          <div className="w-full h-full flex flex-col items-center max-md:flex-col max-md:items-center gap-28">
+            <p className="text-2xl text-white">
+              A Realidade Aumentada (RA) é uma tecnologia que sobrepõe elementos
+              digitais ao mundo real, criando uma experiência mista que pode ser
+              interativa e informativa.
+            </p>
+
             <div className="h-fit w-fit">
               <Image
                 src={aux3}
@@ -72,13 +79,6 @@ export function RASlide({ isTheaterMode }: IProps) {
                 realidade aumentada
               </p>
             </div>
-
-            <p className="text-2xl text-white">
-              A realidade aumentada (RA) consiste em uma tecnologia que integra
-              um conteúdo virtual dentro de um cenário real a partir de câmeras.
-              Com isso, ela permite sobrepor elementos — oferecendo um mundo
-              real com outros olhos.
-            </p>
           </div>
         </div>
       </div>
@@ -87,60 +87,68 @@ export function RASlide({ isTheaterMode }: IProps) {
       {/* Inicio segundo slide */}
       <div className="w-full h-full p-10 flex">
         <div className="h-full flex flex-col gap-10">
-          <h1 className="h-full w-full font-ArchivoBlack text-4xl text-white text-center">
-            História
+          <h1 className="w-full font-ArchivoBlack text-4xl text-white text-center">
+            Principais empresas que utilizam a Realidade Aumentada
           </h1>
           <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
             <div className="h-full w-[40rem] max-md:w-fit max-md:flex max-md:flex-col max-md:items-center">
               <Image
-                src={aux}
-                alt="Imagem do primeiro oculos"
+                src={googleRA}
+                alt="Google Glass"
                 className="h-48 max-md:h-24 w-full max-md:w-44"
               />
               <p className="text-white text-sm">
-                Thomas Caudell, criador do termo &apos;realidade aumentada&apos;
-                (Foto: Divulgação/ceet.unm.edu)
+                Fonte:{' '}
+                <Link
+                  href="https://g1.globo.com/tecnologia/noticia/2015/03/google-nao-desistiu-de-oculos-inteligentes-diz-executivo.html"
+                  target="_blank"
+                >
+                  https://g1.globo.com/tecnologia/noticia/2015/03/google-nao-desistiu-de-oculos-inteligentes-diz-executivo.html
+                </Link>
               </p>
             </div>
 
-            <p className="text-2xl text-white">
-              O termo foi criado em 1992 pelo cientista e pesquisador Thomas P.
-              Caudell durante o desenvolvimento de um dos aviões mais famosos do
-              mundo: o Boeing 747. Caudell observou que os operários
-              responsáveis pela montagem da nova aeronave perdiam muito tempo
-              interpretando as instruções e pensou: o que aconteceria se eles
-              tivessem acesso a um monitor que os guiasse durante a instalação?
-            </p>
+            <div className='text-white flex flex-col gap-7'>
+              <h2 className='text-3xl'>Google</h2>
+              <p className="text-2xl">
+                O Google foi o pioneiro no uso de RA com o Google Glass, que foi
+                uma tentativa inicial de óculos inteligentes. Além disso, o
+                Google oferece funcionalidades de RA em produtos como o Google
+                Maps, que possui uma função de navegação chamada Live View para
+                orientar pessoas pelas cidades.
+              </p>
+            </div>
           </div>
           <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
             <div className="h-full w-[40rem] max-md:w-fit max-md:flex max-md:flex-col max-md:items-center">
               <Image
-                src={aux2}
+                src={appleRA}
                 alt="Imagem do primeiro oculos"
                 className="h-48 w-full"
               />
               <p className="text-sm text-white">
-                &apos;Pokémon Go&apos;, jogo que leva os pokémons para o mundo
-                real (Foto: Divulgação/Apple)
+                Fonte:{' '}
+                <Link
+                  href="https://www.apple.com/apple-vision-pro/"
+                  target="_blank"
+                >
+                  https://www.apple.com/apple-vision-pro/
+                </Link>
               </p>
             </div>
-            <div className="flex flex-col gap-3 text-2xl text-white">
-              <p>
-                Foi em 1992, então, que surgiu o conceito de RA, e não, tal como
-                muitos acreditam, no verão de 2016, quando fomos contagiados
-                pela febre do Pokémon GO, um videogame que o jogador deve
-                procurar e capturar diferentes personagens da saga japonesa. Em
-                seu auge, o game atingiu a marca astronômica de 45 milhões de
-                usuários diários ativos.
-              </p>
-              <p>
-                O Pokémon GO popularizou a RA. Ele aproximou essa tecnologia do
-                grande publico, mas, naquela época, já eram muitas as empresas
-                de diversos setores (saúde, educação, arquitetura, serviços,
-                varejo, etc.) que começavam a utilizá-la com o objetivo de criar
-                experiências de valor para seus clientes.
-              </p>
+
+            <div className='text-white flex flex-col gap-7'>
+              <h2 className='text-3xl'>Apple</h2>
+              <p className='text-2xl'>
+              A Apple incorporou recursos de RA em seus dispositivos IOS, como o
+              iPhone e o iPad, por meio da plataforma ARRKit. Muitas aplicações
+              utilizam esses recursos para jogos, design de interiores, educação
+              e outras experiências interativas. A Apple também lançou o Vision
+              Pro, um headset de realidade mista com capacidade para
+              experiências de RA e RV.
+            </p>
             </div>
+            
           </div>
         </div>
       </div>
@@ -148,53 +156,54 @@ export function RASlide({ isTheaterMode }: IProps) {
 
       {/* Inicio terceiro slide */}
       <div className="w-full h-full p-10 flex">
-        <div className="h-full w-full flex flex-col gap-10">
-          <h1 className="font-ArchivoBlack text-4xl text-white text-center">
-            Algumas empresas que aderiram a RA:
+        <div className="h-full flex flex-col gap-10">
+          <h1 className="w-full font-ArchivoBlack text-4xl text-white text-center">
+            Principais empresas que utilizam a Realidade Aumentada
           </h1>
           <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
-            <div className="h-full max-md:h-fit w-fit">
+            <div className="h-full w-[40rem] max-md:w-fit max-md:flex max-md:flex-col max-md:items-center">
               <Image
-                src={aux4}
-                alt="Imagem do primeiro oculos"
-                className="h-48 max-md:h-fit w-full"
+                src={microsftRA}
+                alt="HoloLens da Microsoft"
+                className="h-48 max-md:h-24 w-full max-md:w-44"
               />
-              <p className="text-white text-sm">Imagem: Apple.</p>
+              <p className="text-white text-sm">
+                Fonte:{' '}
+                <Link
+                  href="https://www.safeimports.com.br/microsoft-hololens2"
+                  target="_blank"
+                >
+                  https://www.safeimports.com.br/microsoft-hololens2
+                </Link>
+              </p>
             </div>
-            <ul className="text-xl text-white list-disc ml-10 flex flex-col gap-5 text-start">
-              <li>IKEA – empresa de móveis.</li>
-              <li>MedRoom – startup de ensino medicinal</li>
-              <li>DigitalKey e a iTeleport – empresa da área de arquitetura</li>
-              <li>Techplus – industria que aderiu a RA</li>
-              <li>Apple – Com o Vision Pro</li>
-            </ul>
+
+            <div className='text-white flex flex-col gap-7'>
+              <h2 className='text-3xl'>Microsoft</h2>
+              <p className="text-2xl">
+              A Microsoft desenvolveu o HoloLens, um dispositivo de realidade mista que permite sobrepor elementos digitais ao mundo real. Ele é amplamente utilizado para fins industriais, médicos e educacionais.
+              </p>
+            </div>
           </div>
           <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
-            <div className="h-full max-md:h-fit w-fit">
+            <div className="h-full w-[40rem] max-md:w-fit max-md:flex max-md:flex-col max-md:items-center">
               <Image
-                src={aux5}
+                src={pokemon}
                 alt="Imagem do primeiro oculos"
-                className="h-48 max-md:h-fit w-full"
+                className="h-48 w-full"
               />
               <p className="text-sm text-white">
-                O Ikea Place facilita a decisão de compra dos clientes (Foto:
-                IKEA)
+              Jogo usa realidade aumentada para levar personagens da Nintendo ao mundo real, mas de forma virtual (Reprodução/Niantic)
               </p>
             </div>
-            <div className="flex flex-col gap-3 text-2xl text-white">
-              <h2 className="text-center text-3xl font-bold mb-6">
-                Exemplo: IKEA
-              </h2>
-              <p>
-                “Graças às ferramentas digitais, podemos ter toda a Ikea
-                conosco, em uma área reduzida [oferecendo ao mesmo tempo] uma
-                continuidade entre as lojas físicas e a oferta online, em
-                diferentes suportes, com a possibilidade de ser atendido com
-                conselhos personalizados“, acrescentou. “A digitalização abre
-                novas oportunidades no setor varejista. Queremos aproveitá-las
-                para fortalecer o contato com o cliente”.
-              </p>
+
+            <div className='text-white flex flex-col gap-7'>
+              <h2 className='text-3xl'>Niantic</h2>
+              <p className='text-2xl'>
+              Conhecida pelo jogo de sucesso Pokémon Go, que usa a RA para colocar Pokémon no mundo real. Eles também desenvolveram outros jogos que exploram a realidade aumentada como Harry Potter: Wizard Unite.
+            </p>
             </div>
+            
           </div>
         </div>
       </div>
@@ -204,58 +213,98 @@ export function RASlide({ isTheaterMode }: IProps) {
       <div className="w-full h-full p-10 flex">
         <div className="w-full h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
-            RA nas indústrias
+          Principais empresas que utilizam a Realidade Aumentada
           </h1>
-          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
-            <div className="h-full max-md:flex max-md:flex-col max-md:items-center max-md:h-fit w-fit">
+          <div className="w-full h-full flex flex-col items-center max-md:flex-col max-md:items-center gap-28">
+            <div className="text-white flex flex-col gap-7" >
+              <h2 className="text-3xl">IKEA</h2>
+            <p className="text-2xl text-white">
+            A IKEA usa a RA para permitir que os clientes visualizem móveis em seus espaços, por meio do aplicativo IKEA Place. Os usuários podem sobrepor modelos tridimensionais de móveis em ambientes reais para ajudar a tomar decisões de compra.
+            </p>
+            </div>
+            
+
+            <div className="h-fit w-fit">
               <Image
-                src={aux6}
+                src={ikeaRA}
                 alt="Imagem do primeiro oculos"
-                className="h-48 max-md:h-fit w-fit"
+                className="h-48 max-md:h-fit w-full"
               />
-              <p className="text-white text-sm">
-                Foto:
-                https://convergint.com.br/2021/01/19/realidade-aumentada-na-industria-como-a-tecnologia-otimiza-os-processos-de-manutencao/
-              </p>
-            </div>
-            <div className="flex flex-col gap-3 text-2xl text-white">
-              <p>
-                RA mais conhecido na industria como 4.0, trás uma visão positiva
-                através da digitalização industrial, promovendo um melhor
-                desempenho na produtividade.
-              </p>
-            </div>
-          </div>
-          <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
-            <div className="h-full max-md:h-fit w-fit">
-              <Image
-                src={aux7}
-                alt="Imagem do primeiro oculos"
-                className="h-48 max-md:h-fit w-fit"
-              />
-              <p className="text-sm text-white">
-                Foto:
-                https://automni.com.br/realidade-aumentada-na-logistica-interna-a-experiencia-do-cliente-em-primeiro-lugar/
-              </p>
-            </div>
-            <div className="flex flex-col gap-3 text-2xl text-white">
-              <p>
-                Capacitando através de treinamentos, deixando mais simplificado
-                e capacitado, evitando assim erros. E em manutenção o usuario
-                consegue acessar manuais entre outros no ato do reparo de forma
-                remota. Fabricas de automotivos são um dos maiores exemplos,
-                pois utilizam muito na atualidade atraves da robótica a RA.
-              </p>
-              <p>
-                No varejo o RA através de smartphones que possibilita ao usuário
-                capturar, envio e edição em tempo real. Design de interiores
-                onde o usuário pode visualizar como seria sua casa.
+             <p className="text-white text-sm">
+                Fonte:{' '}
+                <Link
+                  href="https://www.ikea.com/global/en/newsroom/innovation/ikea-to-launch-new-ar-capabilities-for-ikea-place-on-new-ipad-pro-200319/"
+                  target="_blank"
+                >
+                  https://www.ikea.com/global
+                </Link>
               </p>
             </div>
           </div>
         </div>
       </div>
       {/* Fim quarto slide */}
+
+      {/* Inicio quinto slide */}
+      <div className="w-full h-full p-10 flex">
+        <div className="h-full flex flex-col gap-10">
+          <h1 className="w-full font-ArchivoBlack text-4xl text-white text-center">
+          Aplicativos de Realidade Aumentada
+          </h1>
+          <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full w-[40rem] max-md:w-fit max-md:flex max-md:flex-col max-md:items-center">
+              <Image
+                src={medidasRA}
+                alt="App de medidas"
+                className="h-48 max-md:h-24 w-full max-md:w-44"
+              />
+              <p className="text-white text-sm">
+                Fonte:{' '}
+                <Link
+                  href="https://www.cnnbrasil.com.br/tecnologia/realidade-aumentada/"
+                  target="_blank"
+                >
+                  https://www.cnnbrasil.com.br/tecnologia/realidade-aumentada/
+                </Link>
+              </p>
+            </div>
+
+            <div className='text-white flex flex-col gap-7'>
+              <h2 className='text-3xl'>Medidas (IOS)</h2>
+              <p className="text-2xl">
+              Ele funciona como uma espécie de fita métrica, permitindo medir o tamanho dos objetos ao seu redor por meio da câmera.
+              </p>
+            </div>
+          </div>
+          <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full w-[40rem] max-md:w-fit max-md:flex max-md:flex-col max-md:items-center">
+              <Image
+                src={inkHunterRA}
+                alt="Imagem do primeiro oculos"
+                className="h-48 w-full"
+              />
+              <p className="text-white text-sm">
+                Fonte:{' '}
+                <Link
+                  href="https://www.cnnbrasil.com.br/tecnologia/realidade-aumentada/"
+                  target="_blank"
+                >
+                  https://www.cnnbrasil.com.br/tecnologia/realidade-aumentada/
+                </Link>
+              </p>
+            </div>
+
+            <div className='text-white flex flex-col gap-7'>
+              <h2 className='text-3xl'>Ink Hunter</h2>
+              <p className='text-2xl'>
+              É a solução de RA para quem quer se tatuar. O app permite testar como uma tatuagem vai ficar. Para usar é bem simples: você só precisa marcar o espaço no seu corpo com uma caneta e apontá-lo para a câmera. 
+            </p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      {/* Fim quinto slide */}
 
       {/* Fim slide */}
       <div className="w-full h-full p-10 flex">
@@ -267,34 +316,42 @@ export function RASlide({ isTheaterMode }: IProps) {
             <ul className="text-xl text-white list-disc ml-10 flex flex-col gap-5 text-start">
               <li>
                 <Link
-                  href="	https://www.iberdrola.com/inovacao/o-que-e-realidade-aumentada#:~:text=A%20Realidade%20Aumentada%20(RA)%20%C3%A9,bilh%C3%B5es%20de%20d%C3%B3lares%20no%20mundo"
+                  href="https://g1.globo.com/tecnologia/noticia/2015/03/google-nao-desistiu-de-oculos-inteligentes-diz-executivo.html"
                   target="_blank"
                 >
-                  https://www.iberdrola.com/inovacao/o-que-e-realidade-aumentada
+                  https://g1.globo.com/tecnologia/noticia/2015/03/google-nao-desistiu-de-oculos-inteligentes-diz-executivo.html
                 </Link>
               </li>
               <li>
                 <Link
-                  href="https://r2u.io/confira-algumas-empresas-de-realidade-virtual-e-realidade-aumentada-no-brasil/"
+                  href="https://www.apple.com/apple-vision-pro/"
                   target="_blank"
                 >
-                  https://r2u.io/confira-algumas-empresas-de-realidade-virtual-e-realidade-aumentada-no-brasil/
+                  https://www.apple.com/apple-vision-pro/
                 </Link>
               </li>
               <li>
                 <Link
-                  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNQirHDzlyIyKC_tyaVY6LrQRBDm_tV_mc0GUq1VgguI3PKGPhFogsakJN&s=10"
+                  href="https://www.safeimports.com.br/microsoft-hololens2"
                   target="_blank"
                 >
-                  https://encrypted-tbn0.gstatic.com/
+                  https://www.safeimports.com.br/microsoft-hololens2
                 </Link>
               </li>
               <li>
                 <Link
-                  href="https://sebrae.com.br/sites/PortalSebrae/artigos/realidadeaumentada-torna-mais-eficiente-a-industria-40,4d7bcf1a03fe5810VgnVCM1000001b00320aRCRD"
+                  href="https://www.ikea.com/global/en/newsroom/innovation/ikea-to-launch-new-ar-capabilities-for-ikea-place-on-new-ipad-pro-200319/"
                   target="_blank"
                 >
-                  https://sebrae.com.br/sites/PortalSebrae/artigos/realidadeaumentada-torna-mais-eficiente-a-industria-40
+                  https://www.ikea.com/global/
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.cnnbrasil.com.br/tecnologia/realidade-aumentada/"
+                  target="_blank"
+                >
+                  https://www.cnnbrasil.com.br/tecnologia/realidade-aumentada/
                 </Link>
               </li>
             </ul>

@@ -5,17 +5,15 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import Carousel, { ResponsiveType } from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import { Button } from '../../../components/shadcn/button'
 
-import aux from '../../assets/17.png'
 import aux2 from '../../assets/diferencas-realidade-virtual-e-aumentada.png'
 import aux3 from '../../assets/grupo-multirracial-de-estudantes-usando-gadgets-de-rv-durante-as-aulas.webp'
-import aux4 from '../../assets/2015-09-29-vr-helm-militar-norteamericano.webp'
-import aux5 from '../../assets/61e6f5037c6a20001842655c.webp'
-import aux6 from '../../assets/2.-realidade-virtual.webp'
-import aux7 from '../../assets/vr-educação.jpeg'
-import aux8 from '../../assets/img_8649.webp'
-import aux9 from '../../assets/alunos-da-bond-university-australia.-cred-divulgacao-1024x1024.jpg'
-import { Button } from '../../../components/shadcn/button'
+
+import sonyRV from "../../assets/sony.png"
+import valveRV from "../../assets/valve.png"
+import metaRV from "../../assets/meta-quest.png"
+import nasaRV from "../../assets/nasa-rv.jpeg"
 
 const responsive: ResponsiveType = {
   desktop: {
@@ -44,15 +42,15 @@ export function RVSlide({ isTheaterMode }: IProps) {
       draggable={true}
       keyBoardControl
       itemClass={`${isTheaterMode ? 'carousel-full-mode' : ''} slideBackground`}
-      containerClass='carousel-conteiner'
+      containerClass="carousel-conteiner"
       customRightArrow={
         <Button className="absolute right-10 text-white p-5 py-7 rounded-full bg-white opacity-50 hover:bg-white hover:opacity-100">
-          <ArrowRight size={36} color='#000' />
+          <ArrowRight size={36} color="#000" />
         </Button>
       }
       customLeftArrow={
         <Button className="absolute left-10 text-white p-5 py-7 rounded-full bg-white opacity-50 hover:bg-white hover:opacity-100">
-          <ArrowLeft size={36} color='#000' />
+          <ArrowLeft size={36} color="#000" />
         </Button>
       }
     >
@@ -60,46 +58,30 @@ export function RVSlide({ isTheaterMode }: IProps) {
       <div className="w-full h-full p-10 flex">
         <div className="w-full h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
-            O que é Realidade Virtual?
+            O QUE É REALIDADE VIRTUAL
           </h1>
-          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
-            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
+          <div className="w-full h-full flex flex-col items-center max-md:flex-col max-md:items-center gap-28">
+            <p className="text-2xl text-white">
+              A Realidade Virtual (RV) busca fazer com que o cérebro acredite em
+              algo como realidade, mesmo que não seja, e várias definições de
+              realidade virtual já foram cunhadas, mas atualmente se refere
+              principalmente a imagens geradas por computador e hardware
+              imersivo. Embora a interatividade seja frequentemente citada como
+              um requisito, nem toda realidade virtual gerada por computador é
+              interativa e não precisa da interação para atingir realidade na
+              nossa percepção.
+            </p>
+
+            <div className="h-fit w-fit">
               <Image
                 src={aux2}
                 alt="Imagem do primeiro oculos"
                 className="h-48 max-md:h-fit w-full"
               />
-            </div>
-            <p className="text-xl text-white">
-              A RV busca fazer com que o cérebro acredite em algo como
-              realidade, mesmo que não seja, e várias definições de realidade
-              virtual já foram cunhadas, mas atualmente se refere principalmente
-              a imagens geradas por computador e hardware imersivo. Embora a
-              interatividade seja frequentemente citada como um requisito, nem
-              toda realidade virtual gerada por computador é interativa e não
-              precisa da interação para atingir realidade na nossa percepção.
-            </p>
-          </div>
-          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
-            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
-              <Image
-                src={aux}
-                alt="Imagem do primeiro oculos"
-                className="h-48 w-full"
-              />
-              <p className="text-sm text-white">
-                Primeiro monitor montado na cabeça VR / AR (Sword of Damocles).
+              <p className="text-white text-sm">
+                Montanha-russa com realidade virtual do parque SeaWorld Orlando
               </p>
             </div>
-            <p className="text-xl text-white">
-              Em 1968, Ivan Sutherland e seu aluno Bob Sproull criaram o
-              primeiro monitor montado na cabeça VR / AR (Sword of Damocles) que
-              foi conectado a um computador. Era uma engenhoca grande e
-              assustadora que era pesada demais para qualquer usuário usar
-              confortavelmente e estava suspensa no teto (daí o nome). O usuário
-              também precisaria ser amarrado ao dispositivo. Os gráficos gerados
-              por computador eram salas e objetos de wireframe muito primitivos.
-            </p>
           </div>
         </div>
       </div>
@@ -109,7 +91,7 @@ export function RVSlide({ isTheaterMode }: IProps) {
       <div className="w-full h-full p-10 flex">
         <div className="w-full h-full flex flex-col gap-10">
           <h1 className="font-ArchivoBlack text-4xl text-white text-center">
-            Características
+            Características da Realidade Virtual
           </h1>
           <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
             <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
@@ -125,35 +107,61 @@ export function RVSlide({ isTheaterMode }: IProps) {
 
             <div className="flex flex-col gap-3 text-2xl text-white">
               <p>
-                A realidade virtual rompe ou suaviza a barreira existente entre
-                a simulação e o usuário que normalmente é provocada pelos
-                mecanismos operacionais do computador.
+                As interfaces são divididas em cinco fatores: imersiva,
+                intensiva, interativa, ilustrativa e informativa.
               </p>
-              <p>
-                As interfaces baseadas em Realidade Virtual ocasionam como
-                características, cinco fatores: imersiva, intensiva, interativa,
-                ilustrativa e informativa.
-              </p>
+              <ul className="text-xl text-white list-disc ml-10 flex flex-col gap-5 text-start">
+                <li>
+                  Imersiva: Refere-se à sensação de estar completamente
+                  envolvido no ambiente virtual. A tecnológica busca criar uma
+                  experiência tão convincente que o usuário se sente como se
+                  estivesse fisicamente presente em um mundo virtual. Isso é
+                  alcançado por meio do uso de displays montados na cabeça
+                  (HMDs), áudio tridimensional e sensores de movimento, entre
+                  outras tecnologias.
+                </li>
+                <li>
+                  Intensiva: A característica intensiva está relacionada ao
+                  nível de detalhes e à complexidade dos ambientes virtuais. Uma
+                  experiência de RV intensiva oferece uma riqueza de detalhes
+                  que aproxima o ambiente virtual da realidade, tanto em termos
+                  visuais quanto sonoros. Essa característica pode contribuir
+                  para a profundidade da experiência e o impacto emocional que a
+                  RV pode ter sobre os usuários.{' '}
+                </li>
+                <li>
+                  Interativa: A interatividade é uma parte crucial das
+                  experiências de RV. Ela se refere à capacidade do usuário de
+                  interagir com o ambiente virtual de maneira significativa. Em
+                  um cenário de RV interativo, o usuário pode tocar objetos,
+                  mover-se no espaço, interagir com personagens virtuais e tomar
+                  decisões que afetam o curso da experiência. A interatividade é
+                  fundamental para criar experiências envolventes e
+                  participativas.
+                </li>
+                <li>
+                  Ilustrativa: A característica ilustrativa diz respeito à
+                  capacidade da RV de visualizar informações de maneira clara e
+                  compreensível. Isso é especialmente útil em contextos
+                  educacionais e profissionais, onde a RV pode ser usada para
+                  ilustrar conceitos complexos ou apresentar dados de uma forma
+                  mais intuitiva. A visualização 3D permite que os usuários
+                  entendam informações de maneira mais eficaz, graças à
+                  capacidade de observar objetos de diferentes ângulos e
+                  contextos.{' '}
+                </li>
+                <li>
+                  Informativa: Por fim, a característica informativa refere-se
+                  ao uso da RV para fornecer informações e conhecimentos ao
+                  usuário. Em ambientes de RV informativos, o conteúdo é
+                  apresentado de maneira envolvente, facilitando a aprendizagem
+                  e a retenção de informações. A RV é uma ferramenta valiosa
+                  para treinamento, educação e simulação, pois pode fornecer
+                  informações de uma maneira mais dinâmica e interativa do que
+                  os métodos tradicionais.
+                </li>
+              </ul>
             </div>
-          </div>
-          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
-            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
-              <Image
-                src={aux4}
-                alt="Imagem do primeiro oculos"
-                className="h-48 w-full"
-              />
-              <p className="text-sm text-white">
-                Soldado norte-americano em treinamento simulado de salto de
-                paraquedas — Foto: Reprodução / Wikipédia.
-              </p>
-            </div>
-            <p className="text-2xl text-white">
-              Os seus componentes são o usuário que faz parte de um mundo
-              virtual gerado no computador, utilizando-se das vias sensoriais de
-              percepção e controle, esses ambiente virtual criado serve para
-              simular um ambiente real ou imaginário.
-            </p>
           </div>
         </div>
       </div>
@@ -161,62 +169,48 @@ export function RVSlide({ isTheaterMode }: IProps) {
 
       {/* Inicio terceiro slide */}
       <div className="w-full h-full p-10 flex">
-        <div className="w-full h-full flex flex-col gap-10">
-          <h1 className="font-ArchivoBlack text-4xl text-white text-center">
-            Classificação da Realidade Virtual (Casas et al., 1996)
+        <div className="h-full flex flex-col gap-10">
+          <h1 className="w-full font-ArchivoBlack text-4xl text-white text-center">
+          Principais empresas que utilizam a Realidade Virtual
           </h1>
-          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
-            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
+          <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="w-[40rem] max-md:w-fit max-md:flex max-md:flex-col max-md:items-center">
               <Image
-                src={aux6}
+                src={metaRV}
+                alt="Kit de realidade virtual da META"
+                className="h-48 max-md:h-24 w-full max-md:w-44"
+              />
+              <p className="text-white text-sm">
+                Kit de realidade virtual da META
+              </p>
+            </div>
+
+            <div className='text-white flex flex-col gap-7'>
+              <h2 className='text-3xl'>Meta</h2>
+              <p className='text-2xl'>
+              A Meta é proprietária da Oculus, uma das marcas mais reconhecidas em RV. Eles oferecem dispositivos como o Oculus Quest, um headset autônomo para jogos e outras experiências de RV. A Meta também está envolvida em criar o “metaverso”, uma visão de espaços virtuais onde as pessoas podem interagir socialmente e profissionalmente.
+            </p>
+            </div>
+          </div>
+          <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full w-[40rem] max-md:w-fit max-md:flex max-md:flex-col max-md:items-center">
+              <Image
+                src={valveRV}
                 alt="Imagem do primeiro oculos"
                 className="h-48 w-full"
               />
               <p className="text-white text-sm">
-                Jogos e aplicações oferecem experiências diferenciadas em
-                Realidade Virtual — Foto: Viviane Weneck/TechTudo
+                Kit de realidade virtual da Valve
               </p>
             </div>
-            <ul className="text-xl text-white list-disc ml-10 flex flex-col gap-5 text-start">
-              <li>
-                Sistemas de imersão: aqueles que submergem ou introduzem o
-                explorador de maneira estreita com o mundo virtual, mediante a
-                utilização de sistemas visuais do tipo HMD.
-              </li>
-              <li>
-                Realidade virtual em Segunda pessoa (unencumbered systems):
-                envolve respostas em tempo real. O explorador vê a si mesmo
-                dentro de cena, pois é colocado em frente a um monitor no qual é
-                projetada sua imagem somada a outra imagem utilizada como fundo
-                ou ambiente
-              </li>
-              <li>
-                Sistema de Telepresença: a imersão é percebida através de sons e
-                respostas aos movimentos realizados no mundo real.
-              </li>
-              <li>
-                Sistema Desktop: englobam as aplicações que mostram uma imagem
-                2D ou 3D na tela plana de um monitor de computador.
-              </li>
-            </ul>
-          </div>
-          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
-            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
-              <Image
-                src={aux5}
-                alt="Imagem do primeiro oculos"
-                className="h-48 w-full"
-              />
-              <p className="text-sm text-white">
-                Meta Quest 2, dispositivo RV mais popular de todos os tempos.
-              </p>
-            </div>
-            <p className="text-xl text-white">
-              Para que essas ideias aconteçam com maior performance, é
-              necessária a utilização de alguns dispositivos de interface como:
-              mouses, joysticks 2D 3D, luvas, monitor, shutter glasses,
-              capacetes, cave e projetor de retina..
+
+            <div className='text-white flex flex-col gap-7'>
+              <h2 className='text-3xl'>Valve</h2>
+              <p className='text-2xl'>
+              A Valve é uma importante empresa de desenvolvimento de jogos que tem explorado a RV de forma inovadora. Eles também criaram o Valve Index, um dos headsets de RV de alta qualidade no mercado.
             </p>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -224,128 +218,52 @@ export function RVSlide({ isTheaterMode }: IProps) {
 
       {/* Inicio quarto slide */}
       <div className="w-full h-full p-10 flex">
-        <div className="w-full h-full flex flex-col gap-10">
-          <h1 className="font-ArchivoBlack text-4xl text-white text-center">
-            Realidade Virtual na Educação
+        <div className="h-full flex flex-col gap-10">
+          <h1 className="w-full font-ArchivoBlack text-4xl text-white text-center">
+          Principais empresas que utilizam a Realidade Virtual
           </h1>
-          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
-            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
+          <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="w-[40rem] max-md:w-fit max-md:flex max-md:flex-col max-md:items-center">
               <Image
-                src={aux7}
-                alt="Imagem do primeiro oculos"
-                className="h-48 w-full"
+                src={sonyRV}
+                alt="Óculos de realidade virtual da Sony"
+                className="h-48 max-md:h-24 w-full max-md:w-44"
               />
-              <p className="text-white text-sm">Foto: https://forbes.com.br</p>
-            </div>
-            <div className="flex flex-col gap-3 text-2xl text-white">
-              <p>
-                A Educação pode ser vista como um processo de descoberta,
-                exploração e de observação, além de eterna construção do
-                conhecimento. Com a Realidade Virtual presente na educação
-                poderemos descobrir, explorar e construir conhecimento
-                (aprender) sobre lugares que jamais pensaríamos visitar.
-              </p>
-              <p>
-                A Realidade Virtual em seu conjunto reúne especificidades e
-                atributos que a tornam a ferramenta ideal para as múltiplas
-                situações e contextos de pesquisa e aprendizagem. Cada um tem o
-                seu estilo de aprendizagem, uns visuais, outros verbais, uns
-                gostam de explorar e outros preferem deduzir. Além disso,
-                permite também a criação de ambientes onde a aprendizagem se
-                realiza por etapas, sendo as barreiras entre as etapas
-                facilmente colocadas ou removidas.
+              <p className="text-white text-sm">
+              Óculos de realidade virtual da Sony
               </p>
             </div>
+            <div className='text-white flex flex-col gap-7'>
+              <h2 className='text-3xl'>Sony</h2>
+              <p className='text-2xl'>
+              A Sony desenvolveu o PlayStation VR para uso com o console PlayStation, proporcionando uma variedade de experiências de RV, especialmente jogos.
+            </p>
+            </div>
+            
           </div>
-          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
-            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
+          <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
+            <div className="h-full w-[40rem] max-md:w-fit max-md:flex max-md:flex-col max-md:items-center">
               <Image
-                src={aux8}
-                alt="Imagem do primeiro oculos"
+                src={nasaRV}
+                alt="O engenheiro Tom Grubb manipula uma simulação em 3D com a animação da velocidade e da direção de quatro milhões de estrelas na nossa vizinhança da Via Láctea. (Foto: NASA/Chris Gunn)"
                 className="h-48 w-full"
               />
-              <p className="text-sm text-white">
-                Dentro dos óculos de papel, há um celular com o programa de
-                realidade virtual. — Foto:
-                https://epoca.globo.com/ideias/noticia/2016/01/realidade-virtual-na-sala-de-aula.html
+              <p className="text-white text-sm">
+              O engenheiro Tom Grubb manipula uma simulação em 3D com a animação da velocidade e da direção de quatro milhões de estrelas na nossa vizinhança da Via Láctea. (Foto: NASA/Chris Gunn)
               </p>
             </div>
-            <div className="flex flex-col gap-3 text-2xl text-white">
-              <p>
-                A Realidade Virtual não pode ser tratada apenas como &quot;mais
-                uma ferramenta&quot; para melhorar a aprendizagem e sim, como um
-                poderoso instrumento de aprendizagem cujos métodos tradicionais
-                estão falhando.
-              </p>
-              <p>
-                A introdução da Realidade Virtual na educação demonstra um novo
-                paradigma que relata uma educação de forma dinâmica, criativa,
-                colocando o aluno no centro dos processos de aprendizagem e
-                buscando uma formação de um ser crítico, independente e
-                construtor de seu conhecimento. Mas, infelizmente, a utilização
-                da Realidade Virtual nas escolas está longe de ser um sistema
-                barato.
-              </p>
+
+            <div className='text-white flex flex-col gap-7'>
+              <h2 className='text-3xl'>Nasa</h2>
+              <p className='text-2xl'>
+              Utiliza Rv para treinamentos de astronautas, simulação de missões e visualização de dados espaciais.
+            </p>
             </div>
+            
           </div>
         </div>
       </div>
       {/* Fim quarto slide */}
-
-      {/* Inicio quinto slide */}
-      <div className="w-full h-full p-10 flex">
-        <div className="w-full h-full flex flex-col gap-10">
-          <h1 className="font-ArchivoBlack text-4xl text-white text-center">
-            Realidade Virtual na Educação
-          </h1>
-          <div className="w-full h-fit flex gap-5 max-md:flex-col max-md:items-center">
-            <div className="h-full max-md:h-fit w-[40rem] max-md:w-fit">
-              <Image
-                src={aux9}
-                alt="Imagem do primeiro oculos"
-                className="h-48 w-96"
-              />
-              <p className="w-96 text-white text-sm text-wrap">
-                Aluna da Bond University, Austrália. Foto:
-                https://desafiosdaeducacao.com.br/realidade-aumentada-e-virtual-educacao/
-              </p>
-            </div>
-            <div className="flex flex-col gap-3 text-2xl text-white">
-              <div className="flex flex-col gap-3 text-2xl text-white">
-                <h2 className="text-center text-3xl font-bold mb-6">
-                  Motivos para usar RV na educação
-                </h2>
-                <ul className="text-xl text-white list-disc ml-10 flex flex-col gap-5 text-start">
-                  <li>Maior motivação dos estudantes (usuários);</li>
-                  <li>
-                    Poder de ilustração da realidade virtual para alguns
-                    processos e objetos é muito maior do que outras mídias;
-                  </li>
-                  <li>Permite uma análise de muito perto ou muito longe;</li>
-                  <li>
-                    Permite que as pessoas com deficiência realizem tarefas que
-                    de outra forma não são possíveis;
-                  </li>
-                  <li>Dá oportunidades para experiências;</li>
-                  <li>
-                    Permite que o aprendiz desenvolva o trabalho no seu próprio
-                    ritmo;
-                  </li>
-                  <li>
-                    Não restringe o prosseguimento de experiências ao período da
-                    aula regular;
-                  </li>
-                  <li>
-                    Permite que haja interação, e desta forma estimula a
-                    participação ativa do estudante.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Fim quinto slide */}
 
       {/* Fim slide */}
       <div className="w-full h-full p-10 flex">
@@ -368,10 +286,25 @@ export function RVSlide({ isTheaterMode }: IProps) {
               </li>
               <li>
                 <Link
-                  href="https://horusstudio.com.br/historia-dos-oculos-de-realidade-virtual-vr"
+                  href="https://about.meta.com/br/technologies/meta-quest/"
                   target="_blank"
                 >
-                  https://horusstudio.com.br/historia-dos-oculos-de-realidade-virtual-vr
+                  https://about.meta.com/br/technologies/meta-quest/
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.valvesoftware.com/pt-br/index"
+                  target="_blank"
+                >
+                  https://www.valvesoftware.com/pt-br/index
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.playstation.com/pt-br/ps-vr/"
+                >
+                  https://www.playstation.com/pt-br/ps-vr/
                 </Link>
               </li>
             </ul>
