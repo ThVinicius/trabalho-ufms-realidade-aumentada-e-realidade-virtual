@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description:
     'Trabalho realizado na aula de Fundamentos de tecnologia da informação no curso de bacharelado de Sistema de Informação na UFMS',
     openGraph: {
-      images: '/public/images/background-image.png',
+      images: 'https://i.ibb.co/02328VN/background-image.png',
     },
 }
 
