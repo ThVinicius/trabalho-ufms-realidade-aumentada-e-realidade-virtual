@@ -1,5 +1,10 @@
+'use client'
+
 import { ClipboardType } from 'lucide-react'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
+
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false })
 
 export default function VideoPage() {
   return (
@@ -17,15 +22,7 @@ export default function VideoPage() {
         <h1 className="font-ArchivoBlack text-5xl text-white text-center">
           Vídeo da Pesquisa
         </h1>
-        <video
-          controls
-          preload="none"
-          poster="/images/poster.png"
-          className="w-3/4 h-96 object-cover bg-center bg-no-repeat"
-        >
-          <source src="/videos/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <ReactPlayer url="https://youtu.be/nQR2c33208Q" controls />
         <p className="text-xl text-white text-center bg-blue-950 p-3 rounded-lg">
           Quer testar seu conhecimento no assunto? jogue nosso{' '}
           <Link
