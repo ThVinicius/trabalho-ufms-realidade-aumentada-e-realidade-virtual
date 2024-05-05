@@ -1,5 +1,12 @@
 export const membersData = [
-  { id: 1, name: 'Albert Schweitzer', avatar: '', avatarFallback: 'AS' },
+  {
+    id: 1,
+    name: 'Albert Schweitzer',
+    avatar: '',
+    avatarFallback: 'AS',
+    linkedin:
+      'https://www.linkedin.com/in/albert-schweitzer-7a2a98306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+  },
   {
     id: 2,
     name: 'Eloy Camargo',
