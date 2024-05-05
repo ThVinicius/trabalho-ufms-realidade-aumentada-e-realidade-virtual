@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 import Carousel, { ResponsiveType } from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 
@@ -14,6 +15,7 @@ import aux6 from '../../assets/2.-realidade-virtual.webp'
 import aux7 from '../../assets/vr-educação.jpeg'
 import aux8 from '../../assets/img_8649.webp'
 import aux9 from '../../assets/alunos-da-bond-university-australia.-cred-divulgacao-1024x1024.jpg'
+import { Button } from '../../../components/shadcn/button'
 
 const responsive: ResponsiveType = {
   desktop: {
@@ -43,6 +45,16 @@ export function RVSlide({ isTheaterMode }: IProps) {
       keyBoardControl
       itemClass={`${isTheaterMode ? 'carousel-full-mode' : ''} slideBackground`}
       containerClass='carousel-conteiner'
+      customRightArrow={
+        <Button className="absolute right-10 text-white p-5 py-7 rounded-full bg-white opacity-50 hover:bg-white hover:opacity-100">
+          <ArrowRight size={36} color='#000' />
+        </Button>
+      }
+      customLeftArrow={
+        <Button className="absolute left-10 text-white p-5 py-7 rounded-full bg-white opacity-50 hover:bg-white hover:opacity-100">
+          <ArrowLeft size={36} color='#000' />
+        </Button>
+      }
     >
       {/* Inicio primeiro slide */}
       <div className="w-full h-full p-10 flex">
