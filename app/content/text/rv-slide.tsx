@@ -242,18 +242,18 @@ export function RVSlide({ isTheaterMode }: IProps) {
             
           </div>
           <div className="w-full h-full flex gap-5 max-md:flex-col max-md:items-center">
-            <div className="h-full w-[40rem] max-md:w-fit max-md:flex max-md:flex-col max-md:items-center">
+            <div className="h-full w-96 max-md:w-fit max-md:flex max-md:flex-col max-md:items-center">
               <Image
                 src={nasaRV}
                 alt="O engenheiro Tom Grubb manipula uma simulação em 3D com a animação da velocidade e da direção de quatro milhões de estrelas na nossa vizinhança da Via Láctea. (Foto: NASA/Chris Gunn)"
                 className="h-48 w-full"
               />
-              <p className="text-white text-sm">
+              <p className="w-full flex justify-end text-white text-sm">
               O engenheiro Tom Grubb manipula uma simulação em 3D com a animação da velocidade e da direção de quatro milhões de estrelas na nossa vizinhança da Via Láctea. (Foto: NASA/Chris Gunn)
               </p>
             </div>
 
-            <div className='text-white flex flex-col gap-7'>
+            <div className='w-full text-white flex flex-col gap-7'>
               <h2 className='text-3xl'>Nasa</h2>
               <p className='text-2xl'>
               Utiliza Rv para treinamentos de astronautas, simulação de missões e visualização de dados espaciais.
